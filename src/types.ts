@@ -26,3 +26,4 @@ export interface Testimonial {
   quote: string;
   rating: number;
 }
+

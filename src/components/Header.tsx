@@ -83,6 +83,17 @@ export default function Header({ onOpenConsultation }: HeaderProps) {
             Works
           </a>
           <a
+            href="#feedback-hub"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("feedback-hub");
+            }}
+            className="text-xs uppercase tracking-[0.15em] font-medium text-brand-muted hover:text-brand-charcoal transition-colors duration-300"
+            id="nav-link-feedback"
+          >
+            Feedback
+          </a>
+          <a
             href="#contact"
             onClick={(e) => {
               e.preventDefault();
@@ -152,6 +163,17 @@ export default function Header({ onOpenConsultation }: HeaderProps) {
             id="mobile-nav-link-works"
           >
             Works
+          </a>
+          <a
+            href="#feedback-hub"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("feedback-hub");
+            }}
+            className="text-sm uppercase tracking-[0.15em] font-medium text-brand-muted hover:text-brand-charcoal py-2 border-b border-brand-border/50"
+            id="mobile-nav-link-feedback"
+          >
+            Feedback
           </a>
           <a
             href="#contact"

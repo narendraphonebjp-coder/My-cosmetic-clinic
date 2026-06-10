@@ -5,15 +5,16 @@ import Stats from "./components/Stats";
 import Philosophy from "./components/Philosophy";
 import Works from "./components/Works";
 import Biography from "./components/Biography";
+import StudioFeedbackHub from "./components/StudioFeedbackHub";
 import ConsultationForm from "./components/ConsultationForm";
 import Footer from "./components/Footer";
 import { X, Shield, Star, Award, HeartHandshake } from "lucide-react";
 
 // Official Generated Image Assets relative paths
-const doctorPortraitPath = "/src/assets/images/doctor_portrait_1781088575579.png";
-const clinicInteriorPath = "/src/assets/images/clinic_interior_1781088594430.png";
-const smileBeforePath = "/src/assets/images/smile_before_portrait_1781088609099.png";
-const smileAfterPath = "/src/assets/images/smile_after_portrait_1781088622960.png";
+import doctorPortraitPath from "./assets/images/doctor_portrait_1781088575579.png";
+import clinicInteriorPath from "./assets/images/clinic_interior_1781088594430.png";
+import smileBeforePath from "./assets/images/smile_before_portrait_1781088609099.png";
+import smileAfterPath from "./assets/images/smile_after_portrait_1781088622960.png";
 
 export default function App() {
   const [isConsultationModalOpen, setIsConsultationModalOpen] = useState(false);
@@ -56,6 +57,9 @@ export default function App() {
 
         {/* Surgeon background narrative / timeline history */}
         <Biography />
+
+        {/* Verified Patient Google Reviews & Maps Hub */}
+        <StudioFeedbackHub />
 
         {/* Pre-Consultation callout section matching Marchetti "A consultation begins with..." */}
         <section className="py-24 md:py-32 bg-brand-cream border-t border-brand-border text-center px-6 md:px-12 relative overflow-hidden">
