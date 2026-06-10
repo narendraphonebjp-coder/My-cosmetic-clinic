@@ -1,0 +1,6 @@
+{
+  "name": "My Cosmetic Clinic",
+  "description": "High-end aesthetic dental and cosmetic surgery studio run by Dr. Anish Gupta in Harsh Nagar, Kanpur, specializing in aesthetic smile design, crowns, and implants.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
